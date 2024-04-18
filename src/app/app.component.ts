@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component, HostListener, PLATFORM_ID, Inject, OnInit} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 import {NavbarComponent} from "./components/navbar/navbar.component";
+import {EnviromentService} from "./services/enviroment.service";
+import {isPlatformBrowser} from "@angular/common";
 
 @Component({
   selector: 'app-root',
@@ -11,4 +13,9 @@ import {NavbarComponent} from "./components/navbar/navbar.component";
 })
 export class AppComponent {
   title = 'LaVelada';
+  public screenWidth: number=0;
+
+
+
+
 }

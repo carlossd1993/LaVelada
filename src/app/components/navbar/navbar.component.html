@@ -1,11 +1,49 @@
-<nav>
-  <ul>
-    <li><a routerLink="#">EL EVENTO</a></li>
-    <li><a routerLink="#">COMBATES</a></li>
-    <li><a routerLink="#">
-      <img src="assets/logoVelada.png" class="logo">
-    </a> </li>
-    <li><a routerLink="#">PRONÓSTICOS</a></li>
-    <li><a routerLink="#">ENTRADAS</a></li>
-  </ul>
-</nav>
+@if (screenWidth > 1200) {
+  <nav class="navbar_desktop">
+    <ul>
+      <li><a routerLink="#">EL EVENTO</a></li>
+      <li><a routerLink="#">COMBATES</a></li>
+      <li><a routerLink="#">
+        <img src="/assets/logoVelada.png" class="logo">
+      </a></li>
+      <li><a routerLink="#">PRONÓSTICOS</a></li>
+      <li><a routerLink="#">ENTRADAS</a></li>
+    </ul>
+  </nav>
+} @else {
+  @if (!mostrarMenu) {
+    <nav class="navbar_movil">
+      <div class="capaLogo">
+        <img src="/assets/logoVelada.png" class="logo">
+      </div>
+      <div class="capaBtn">
+        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="toggleMenu()">
+          <mat-icon class="btn-menu">menu</mat-icon>
+        </button>
+      </div>
+
+    </nav>
+  }
+  @if (mostrarMenu) {
+    <div class="menuMovil">
+      <header>
+        <h1>MENÚ</h1>
+        <button mat-icon-button (click)="toggleMenu()">
+          <mat-icon class="btn-menu">close</mat-icon>
+        </button>
+      </header>
+      <hr>
+      <img src="/assets/logomenu.webp"/>
+      <hr>
+      <a routerLink="#">EL EVENTO</a>
+      <hr>
+      <a routerLink="#">COMBATES</a>
+      <hr>
+      <a routerLink="#">PRONOSTICOS</a>
+      <hr>
+      <a routerLink="#">ENTRADAS</a>
+      <hr>
+    </div>
+  }
+
+}

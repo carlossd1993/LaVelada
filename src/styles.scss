@@ -22,4 +22,9 @@ body {
     opacity: .9;
     z-index: -1;
   }
+  color: $blanco;
+  a{
+    text-decoration: none;
+    color: $blanco;
+  }
 }
