@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "styles/colors";
+@import "styles/container";
+@import "styles/navbar";
+@import "styles/logo";
 
 html, body {
   height: 100%;
@@ -17,5 +20,6 @@ body {
     background: $degradado;
     background-image: url("/assets/background.webp");
     opacity: .9;
+    z-index: -1;
   }
 }
