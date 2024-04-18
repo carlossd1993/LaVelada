@@ -1,13 +1,13 @@
 @if (screenWidth > 748) {
   <nav class="navbar_desktop">
     <ul>
-      <li class="enlaceMenu" ><a routerLink="pruebas">EL EVENTO</a></li>
-      <li class="enlaceMenu"><a routerLink="#">COMBATES</a></li>
-      <li ><a routerLink="#">
+      <li class="enlaceMenu" routerLink="home"><a routerLink="home">EL EVENTO</a></li>
+      <li class="enlaceMenu" routerLink="combates"><a routerLink="combates">COMBATES</a></li>
+      <li routerLink="home"><a routerLink="home">
         <img src="./assets/logoVelada.png" class="logo">
       </a></li>
-      <li class="enlaceMenu"><a routerLink="#">PRONÓSTICOS</a></li>
-      <li class="enlaceMenu"><a routerLink="#">ENTRADAS</a></li>
+      <li class="enlaceMenu" routerLink="pronosticos"><a routerLink="pronosticos">PRONOSTICOS</a></li>
+      <li class="enlaceMenu" routerLink="entradas"><a routerLink="entradas">ENTRADAS</a></li>
     </ul>
 
   </nav>
@@ -37,13 +37,13 @@
       <img src="./assets/logomenu.webp"/>
       <hr>
       <!--TODO AÑADIR ROUTER LINK ACTIVE -->
-      <a routerLink="#">EL EVENTO</a>
+      <a routerLink="home">EL EVENTO</a>
       <hr>
-      <a routerLink="#">COMBATES</a>
+      <a routerLink="combates">COMBATES</a>
       <hr>
-      <a routerLink="#">PRONOSTICOS</a>
+      <a routerLink="pronosticos">PRONOSTICOS</a>
       <hr>
-      <a routerLink="#">ENTRADAS</a>
+      <a routerLink="entradas">ENTRADAS</a>
       <hr>
     </div>
   }
