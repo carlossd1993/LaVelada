@@ -1,0 +1,21 @@
+.btn-personalizado{
+  width: 200px;
+  height: 50px;
+  border-color: $blanco;
+  background-color: transparent;
+  color: $blanco;
+  transform: skew(-20deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    transform: skew(20deg);
+
+  }
+  &:hover{
+    background-color: $blanco;
+    color: black;
+    transition: ease-in-out 300ms;
+  }
+
+}
