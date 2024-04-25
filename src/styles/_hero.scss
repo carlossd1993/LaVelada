@@ -5,10 +5,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-
   #enlaceTwitch {
     rotate: -15deg;
     margin-bottom: 1%;
+    font-family: boxeador!important;
   }
 
   #imgFondo {
@@ -31,6 +31,7 @@
 
       h1 {
         font-size: 2em;
+        font-family: boxeador;
       }
     }
   }
@@ -41,6 +42,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
     }
     footer{
       display: flex;

@@ -5,13 +5,30 @@
 @import "styles/logo";
 @import "styles/hero";
 @import "styles/btnPersonalizado";
-html, body {
-  height: 100%;
+
+@font-face {
+  font-family: 'boxeador';
+  src: url("assets/fonts/ElBoxeador.otf");
 }
 
+html, body {
+  height: 100%;
+  font-family: 'boxeador'!important;
+}
+h1, h2, h3{
+  font-family: boxeador!important;
+}
+h1{
+  font-size: 2rem!important;
+}
+h2{
+  font-size: 1.8rem!important;
+}
+h3{
+  font-size: 1.2em!important;
+}
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: $fondo;
   .fondo {
     position: fixed;
@@ -37,5 +54,6 @@ body {
   a {
     text-decoration: none;
     color: $blanco;
+    font-family: boxeador;
   }
 }
