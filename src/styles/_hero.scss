@@ -1,15 +1,18 @@
 @import "screenSizes";
+
 #hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+
   #enlaceTwitch {
     rotate: -15deg;
     margin-bottom: 1%;
-    font-family: boxeador!important;
-    a:hover{
+    font-family: boxeador !important;
+
+    a:hover {
       text-shadow: 3px 3px purple;
     }
   }
@@ -24,36 +27,38 @@
       max-width: 50%;
     }
 
-    #textoHero {
+    #logoHero {
       position: absolute;
-      max-width: 40%;
+      width: 100%;
       height: 100%;
       text-align: center;
       display: flex;
       align-items: center;
+      margin-right: 0;
+      justify-content: center;
 
-      h1 {
-        font-size: 2em;
-        font-family: boxeador;
-      }
+
     }
   }
-  #informacion{
+
+  #informacion {
     width: 50%;
-    main{
+
+    main {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
     }
-    footer{
+
+    footer {
       display: flex;
       flex-direction: column;
       width: 100%;
       row-gap: 20px;
 
-      div{
+      div {
         display: flex;
         @media screen and (max-width: $movil) {
           flex-direction: column;
@@ -61,7 +66,7 @@
           justify-content: center;
           row-gap: 20px;
         }
-        @media screen and (min-width: $movil+1){
+        @media screen and (min-width: $movil+1) {
           flex-direction: row;
           margin-bottom: 1%;
         }
