@@ -1,48 +1,38 @@
-
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  max-height: 100px;
+
   &_desktop {
     @extend .navbar;
-    align-items: center;
-    justify-content: center;
-    .logo{
-      max-width: 50%;
-    }
-    ul {
+    justify-content: space-around;
+    padding-top: 5px;
+    .navbarLink{
       display: flex;
-      align-items: flex-start;
       justify-content: center;
       width: 100%;
-      margin-right: 5%;
-      margin-left: 5%;
-      li {
-        list-style: none;
-        display: inline-block;
-        flex-grow: 1;
-        text-align: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      &:hover{
+        background: $degradadoFondo;
       }
-      .enlaceMenu{
-        padding-top: 5%;
-        padding-bottom: 5%;
-        align-self: flex-start;
-        justify-content: center;
-        &:hover{
-          background: $degradadoFondo;
-          transition: ease-in-out 3000ms !important;
-        }
+      .navbarLinkItem{
+        padding-top: 10%;
       }
-
     }
-
+    .navbarBrand{
+      width: 110px;
+      height: 110px;
+    }
   }
-  &_movil{
+
+  &_movil {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
     justify-content: center;
-    .capaLogo{
+
+    .capaLogo {
       grid-column-start: 2;
       grid-column-end: 2;
       width: 100%;
@@ -51,14 +41,16 @@
       align-items: center;
 
     }
-    .capaBtn{
+
+    .capaBtn {
       width: 100%;
       grid-column-start: 3;
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
       margin-right: 5%;
-      .btn-menu{
+
+      .btn-menu {
         color: $blanco;
         text-align: end;
       }
@@ -67,14 +59,18 @@
   }
 }
 
-.menuMovil{
+.menuMovil {
   position: absolute;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   width: 100vw;
-  header{
+  height: 100%;
+  background-color: $fondo ;
+
+  header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -82,10 +78,12 @@
     padding-top: 1%;
     color: $blanco;
   }
-  hr{
+
+  hr {
     width: 75%;
   }
-  img{
+
+  img {
     max-width: 25%;
   }
 
