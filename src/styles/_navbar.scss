@@ -30,6 +30,7 @@
         justify-content: center;
         &:hover{
           background: $degradadoFondo;
+          transition: ease-in-out 3000ms !important;
         }
       }
 
