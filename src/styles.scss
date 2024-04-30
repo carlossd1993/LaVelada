@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "styles/fonts";
 @import "styles/colors";
 @import "styles/container";
 @import "styles/navbar";
@@ -6,26 +7,14 @@
 @import "styles/hero";
 @import "styles/btnPersonalizado";
 
-@font-face {
-  font-family: 'boxeador';
-  src: url("assets/fonts/ElBoxeador.otf");
-}
+
 
 html, body {
   height: 100%;
-  font-family: 'boxeador'!important;
 }
-h1, h2, h3{
-  font-family: boxeador!important;
-}
-h1{
-  font-size: 2rem!important;
-}
-h2{
-  font-size: 1.8rem!important;
-}
-h3{
-  font-size: 1.2em!important;
+@font-face {
+  font-family: 'boxeador';
+  src: url("./assets/fonts/ElBoxeador.otf");
 }
 body {
 
