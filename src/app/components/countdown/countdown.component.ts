@@ -7,11 +7,14 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './countdown.component.html',
   styleUrl: './countdown.component.scss'
 })
-export class CountdownComponent {
+export class CountdownComponent implements OnInit{
 
 
   cuantosDiasFaltan:number=0;
   constructor() {
+  }
+
+  ngOnInit() {
     this.cuantosDiasFaltan=this.diasFaltan();
   }
 
