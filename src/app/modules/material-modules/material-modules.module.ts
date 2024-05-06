@@ -10,7 +10,8 @@ import {MatIconModule} from "@angular/material/icon";
   imports: [
     CommonModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+
   ],
   exports: [
     MatButtonModule,
